@@ -1,0 +1,108 @@
+:root {
+  --highlight: #edb059;
+  --midgray: #777777;
+  --darkgray: #171717;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--darkgray);
+  color: var(--midgray);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  transition: 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: rgb(255, 255, 255, 1);
+}
+
+.shadow {
+  filter: drop-shadow(2px 2px 8px #000000);
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  height: 540px;
+  background: url("../img/tpa-banner.jpg") center center / cover no-repeat;
+  color: #ffffff;
+}
+
+.hero ul li {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: xx-large;
+}
+
+.hero-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.hero-logotype {
+  padding: 200px 0 50px 0;
+  width: 75vw;
+  text-align: center;
+  font-size: larger;
+}
+
+.discord {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.discord-wrapper {
+  position: relative;
+  margin-right: 5rem;
+  top: -10rem;
+}
+
+.footer {
+  margin: 0 2.5rem 2.5rem 2.5rem;
+  text-align: center;
+  font-size: smaller;
+}
+
+@media (max-width: 1200px) {
+  .discord {
+      justify-content: center;
+  }
+
+  .discord-wrapper {
+    margin-right: 0;
+    top: -3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: url("../img/tpa-banner.jpg") 80% center / cover no-repeat;
+  }
+
+  .hero-logotype {
+    padding-top: 5rem;
+    font-size: medium;
+  }
+}
